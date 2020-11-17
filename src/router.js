@@ -47,6 +47,10 @@ routes.delete('/deleta_produto', Produto.delete);
 // rotas do pedido
 
 routes.post('/criar_pedido', Pedidos.store);
+routes.get('/listar_pedido', Pedidos.show);
+routes.get('/listar_pedido_id', Pedidos.index);
+routes.put('/update_pedido_id', Pedidos.update)
+routes.delete('/delete_pedido_id', Pedidos.delete)
 
 
 module.exports = routes;
