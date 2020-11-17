@@ -46,9 +46,7 @@ module.exports = {
 
     async delete(req, res) {
         const { _id } = req.headers;
-
-        const produto = await Produto.findByIdAndDelete(_id);
-
+        const produto = await Produto.findByIdAndDelete(_id)
         return res.json({'message' : 'Ok. Produto deletado com sucesso!'});
     }
 }
